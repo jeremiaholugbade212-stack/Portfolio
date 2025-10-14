@@ -2,16 +2,31 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const projects = [
   {
-    title: "Netflix Clone",
-    description: "A coffee and snack built with React and Tailwind CSS.",
+    title: "A cafe website",
+    description: "A coffee and snack website built with React and Tailwind CSS.",
     link: "https://cafee-7n7f.vercel.app/",
+    github: "https://github.com/jeremiaholugbade212-stack/cafee",
     
   },
   {
-    title: "Portfolio Website",
-    description: "A personal portfolio built with React, Vite, and Tailwind CSS.",
-    link: "https://your-portfolio.com",
-    github: "https://github.com/yourusername/portfolio",
+    title: "medical Website",
+    description: "A Medical website built with React, Vite, and Tailwind CSS.",
+    link: "https://medical-wupl.vercel.app/",
+    github: "https://github.com/jeremiaholugbade212-stack/medical",
+  },
+  {
+    title: "A Gym website",
+    description: "A fitness website built with React and Tailwind CSS.",
+    link: "https://fitness-app-phi-flax.vercel.app/",
+    github: "https://github.com/jeremiaholugbade212-stack/Fitness-app",
+    
+  },
+  {
+    title: "A Real-Estate website",
+    description: "A Real-estate website built with React and Tailwind CSS.",
+    link: "https://realestate-rose-nine.vercel.app/",
+    github: "https://github.com/jeremiaholugbade212-stack/realestate",
+ 
   },
 ];
 
