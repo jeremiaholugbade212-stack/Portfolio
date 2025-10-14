@@ -19,7 +19,7 @@ const Contact = () => {
       {/* Social Media Links */}
       <div className="flex justify-center gap-6 mt-8 text-2xl">
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/jeremiaholugbade212-stack"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-700 hover:text-blue-600 transition"
@@ -27,7 +27,7 @@ const Contact = () => {
           <FaGithub />
         </a>
         <a
-          href="https://linkedin.com/in/yourusername"
+          href="https://www.linkedin.com/in/jeremiah-olugbade-22736a384"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-700 hover:text-blue-600 transition"
@@ -35,7 +35,7 @@ const Contact = () => {
           <FaLinkedin />
         </a>
         <a
-          href="https://twitter.com/yourusername"
+          href="https://x.com/KUNLAY_1?s=09"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-700 hover:text-blue-600 transition"
@@ -43,7 +43,7 @@ const Contact = () => {
           <FaTwitter />
         </a>
         <a
-          href="https://instagram.com/yourusername"
+          href="https://www.instagram.com/just_kunlay?igsh=YzljYTk1ODg3Zg=="
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-700 hover:text-blue-600 transition"

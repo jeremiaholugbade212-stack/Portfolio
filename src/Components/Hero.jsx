@@ -26,7 +26,7 @@ const Hero = () => {
       {/* Image Section */}
       <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
         <img
-          src="./assets/whatsapp.jpg" // 👈 Add your image path here later, e.g. "./assets/myphoto.jpg"
+          src="" // 👈 Add your image path here later, e.g. "./assets/myphoto.jpg"
           alt="Profile"
           className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-lg border-4 border-blue-500"
         />
