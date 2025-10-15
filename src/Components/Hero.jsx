@@ -1,4 +1,5 @@
 import React from "react";
+import img from "../assets/whatsapp.jpg"; // Make sure this image exists
 
 const Hero = () => {
   return (
@@ -26,8 +27,8 @@ const Hero = () => {
       {/* Image Section */}
       <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
         <img
-          src="" // 👈 Add your image path here later, e.g. "./assets/myphoto.jpg"
-          alt="Profile"
+          src={img} // ✅ Use imported variable here
+          alt="Jeremiah Olugbade"
           className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-lg border-4 border-blue-500"
         />
       </div>
