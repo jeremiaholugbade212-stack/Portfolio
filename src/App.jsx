@@ -5,7 +5,7 @@ import About from "../src/Components/About";
 import Projects from "../src/Components/Projects";
 import Contact from "../src/Components/Contact";
 import Footer from "../src/Components/Footer";
-import { repeatFade } from "../src/Utils/repeatFade";
+import { repeatFade } from "../src/utils/repeatFade";
 
 const App = () => {
 
@@ -31,3 +31,4 @@ const App = () => {
 };
 
 export default App;
+
