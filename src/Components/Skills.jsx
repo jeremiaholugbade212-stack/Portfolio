@@ -3,6 +3,7 @@ import {
   SiHtml5, SiCss3, SiJavascript, SiReact, SiTailwindcss, 
   SiGithub, SiVite, SiFigma 
 } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
 
 export default function Tools() {
   const tools = [
@@ -13,7 +14,7 @@ export default function Tools() {
     { name: "Tailwind CSS", icon: <SiTailwindcss size={40} /> },
     { name: "Vite", icon: <SiVite size={40} /> },
     { name: "GitHub", icon: <SiGithub size={40} /> },
-    { name: "VScode", icon: <SiVscode size={40} /> },
+    { name: "VS Code", icon: <VscVscode size={40} /> },
     
   ];
 
