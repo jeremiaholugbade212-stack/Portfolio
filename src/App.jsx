@@ -25,6 +25,7 @@ const App = () => {
       <div className="fade-section"><Hero /></div>
       <div className="fade-section"><About /></div>
       <div className="fade-section"><Projects /></div>
+      <div className="fade-section"><Tools /></div>
       <div className="fade-section"><Contact /></div>
 
       <Footer />
