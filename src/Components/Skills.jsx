@@ -13,6 +13,7 @@ export default function Tools() {
     { name: "Tailwind CSS", icon: <SiTailwindcss size={40} /> },
     { name: "Vite", icon: <SiVite size={40} /> },
     { name: "GitHub", icon: <SiGithub size={40} /> },
+    { name: "VScode", icon: <SiVscode size={40} /> },
     
   ];
 
