@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 import Navbar from "../src/Components/Navbar";
 import Hero from "../src/Components/Hero";
 import About from "../src/Components/About";
-import Projects from "../src/Components/Projects";
 import Contact from "../src/Components/Contact";
 import Footer from "../src/Components/Footer";
 import { repeatFade } from "../src/utils/repeatFade";
+import Tools from "./Components/Tool";
 
 const App = () => {
 
@@ -22,7 +22,7 @@ const App = () => {
 
       <div className="fade-section"><Hero /></div>
       <div className="fade-section"><About /></div>
-      <div className="fade-section"><Projects /></div>
+      <div className="fade-section"><Tools /></div>
       <div className="fade-section"><Contact /></div>
 
       <Footer />
