@@ -17,7 +17,7 @@ export default function Tools() {
   ];
 
   return (
-    <section className="py-20 bg-gray-100 text-black" id="tools">
+    <section className="py-20 bg-black text-white" id="tools">
       <div className="max-w-6xl mx-auto text-center px-6">
         <h2 className="text-4xl font-bold mb-10">Tools I Use</h2>
 
@@ -25,12 +25,12 @@ export default function Tools() {
           {tools.map((tool, index) => (
             <div 
               key={index}
-              className="flex flex-col items-center bg-white shadow-lg p-6 rounded-2xl hover:scale-105 transition"
+              className="flex flex-col items-center bg-gray-900 border border-gray-700 shadow-xl p-6 rounded-2xl hover:scale-105 hover:border-blue-500 transition duration-300"
             >
-              <div className="text-blue-500 mb-3">
+              <div className="text-blue-400 mb-3">
                 {tool.icon}
               </div>
-              <p className="font-semibold">{tool.name}</p>
+              <p className="font-semibold text-gray-300">{tool.name}</p>
             </div>
           ))}
         </div>
