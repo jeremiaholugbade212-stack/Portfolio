@@ -5,6 +5,8 @@ import About from "../src/Components/About";
 import Contact from "../src/Components/Contact";
 import Footer from "../src/Components/Footer";
 import { repeatFade } from "../src/utils/repeatFade";
+import Projects from "./Components/Projects";
+
 import Tools from "./Components/Tool";
 
 const App = () => {
@@ -22,7 +24,7 @@ const App = () => {
 
       <div className="fade-section"><Hero /></div>
       <div className="fade-section"><About /></div>
-      <div className="fade-section"><Tools /></div>
+      <div className="fade-section"><Projects /></div>
       <div className="fade-section"><Contact /></div>
 
       <Footer />
