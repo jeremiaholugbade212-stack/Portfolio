@@ -21,7 +21,7 @@ export default function Tools() {
   return (
     <section className="py-20 bg-black text-white" id="tools">
       <div className="max-w-6xl mx-auto text-center px-6">
-        <h2 className="text-4xl font-bold mb-10">Tools I Use</h2>
+        <h2 className="text-4xl font-bold mb-10">Tools/Skills</h2>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
           {tools.map((tool, index) => (
