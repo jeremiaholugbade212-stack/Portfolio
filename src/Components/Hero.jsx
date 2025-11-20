@@ -29,7 +29,7 @@ const Hero = () => {
         {/* ✅ ADD YOUR CV PDF HERE */}
         {/* Example: /Jeremiah-Olugbade-CV.pdf (place inside public folder) */}
         <a
-          href="/JEREMIAH-resume.pdf"   // ✅ Replace this with your CV PDF file
+          href="/JEREMIAH-RESUME.pdf"   // ✅ Replace this with your CV PDF file
           target="_blank"
           rel="noopener noreferrer"
           className="bg-gradient-to-r from-green-400 to-blue-500 text-white transform transition-transform duration-300 hover:scale-105 px-6 py-2 rounded-full"
