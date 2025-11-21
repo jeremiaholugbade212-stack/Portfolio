@@ -1,5 +1,6 @@
 import React from "react";
 import { FaWhatsapp, FaInstagram, FaGithub, FaXTwitter, FaEnvelope } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -41,17 +42,17 @@ const Contact = () => {
 
           {/* GitHub */}
           <a 
-            href="https://github.com/jeremiaholugbade212-stack"
+            href="https://www.linkedin.com/in/jeremiah-olugbade-22736a384/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:scale-125 transition-transform duration-300"
+            className="text-blue-500 hover:scale-125 transition-transform duration-300"
           >
-            <FaGithub />
+            <FaLinkedin />
           </a>
 
           {/* Gmail */}
           <a 
-            href="mailto:kunleolugbade212@gmail.com"
+            href="mailto:kunleolugbade146@gmail.com"
             className="text-red-500 hover:scale-125 transition-transform duration-300"
           >
             <FaEnvelope />
@@ -62,7 +63,7 @@ const Contact = () => {
         {/* Footer text */}
         <p className="text-gray-500 mt-8">
           Or email me at:  
-          <span className="text-green-400">kunleolugbade212@gmail.com</span>
+          <span className="text-green-400">kunleolugbade146@gmail.com</span>
         </p>
 
       </div>
