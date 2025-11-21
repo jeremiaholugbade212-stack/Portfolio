@@ -40,15 +40,17 @@ const Contact = () => {
             <FaXTwitter />
           </a>
 
-          {/* GitHub */}
-          <a 
-            href="https://www.linkedin.com/in/jeremiah-olugbade-22736a384/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500 hover:scale-125 transition-transform duration-300"
-          >
-            <FaLinkedin />
-          </a>
+         {/* LinkedIn */}
+<a
+  href="https://www.linkedin.com/in/jeremiah-olugbade-22736a384/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-blue-600 text-white p-2 rounded-full hover:bg-blue-500 hover:scale-110 transition-all duration-300"
+  aria-label="LinkedIn Profile"
+>
+  <FaLinkedin className="text-xl" />
+</a>
+
 
           {/* Gmail */}
           <a 
