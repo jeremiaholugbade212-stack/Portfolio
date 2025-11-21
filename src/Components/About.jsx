@@ -22,15 +22,23 @@ const About = () => {
           />
 
           {/* Text */}
-          <p className='text-lg text-gray-300 leading-relaxed max-w-2xl'>
-            I’m a frontend developer skilled in HTML, CSS, JavaScript, React, Vite, 
-            and Tailwind CSS. I enjoy building responsive, visually appealing, and 
-            user-friendly web applications. I love exploring new technologies and 
-            turning ideas into clean, functional digital experiences.  
-            <br /><br />
-            My goal is to create websites that are not just beautiful, but also 
-            fast, accessible, and enjoyable for users.
-          </p>
+          <p className="text-lg text-gray-300 leading-relaxed max-w-2xl">
+  I’m a frontend developer with a strong passion for crafting smooth, modern, and 
+  meaningful digital experiences. Over time, I’ve developed solid skills in HTML, CSS, 
+  JavaScript, React, Vite, and Tailwind CSS — tools I use to bring ideas to life with clean 
+  code and thoughtful design.
+  <br /><br />
+  I enjoy building interfaces that feel natural, responsive, and visually appealing, 
+  ensuring every user has a seamless experience across all devices. Whether it's turning 
+  a simple concept into a polished layout or refining micro-interactions that make a page 
+  feel alive, I love the entire process of creating.
+  <br /><br />
+  My goal is to build websites and applications that don’t just work, but stand out — 
+  fast, accessible, and enjoyable for users. I’m always exploring new technologies, 
+  improving my workflow, and pushing myself to create digital products that leave a strong 
+  and lasting impression.
+</p>
+
 
         </div>
       </div>
