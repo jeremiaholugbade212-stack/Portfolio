@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="py-3 flex justify-between items-center">
 
         {/* Logo */}
-        <div className="text-xl font-bold">JEREMIAH OLUGBADEee</div>
+        <div className="text-xl font-bold">JEREMIAH OLUGBADE</div>
 
         {/* Mobile Menu Icon */}
         <button 
