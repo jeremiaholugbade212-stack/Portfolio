@@ -31,6 +31,12 @@ const projects = [
     link: "https://medical-wupl.vercel.app/",
     image: medicalImg,
   },
+  {
+    title: "Medical Booking App",
+    description: "A responsive healthcare platform built with React and Tailwind CSS.",
+    link: "https://medical-wupl.vercel.app/",
+    image: medicalImg,
+  },
 ];
 
 const Projects = () => {
