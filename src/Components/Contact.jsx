@@ -59,7 +59,7 @@ const Contact = () => {
 
         {/* Footer text */}
         <p className="text-gray-500 mt-8">
-          Or email me directly at:
+          Or email me directly ata:
           <span className="text-green-400"> kunleolugbade146@gmail.com</span>
         </p>
 
