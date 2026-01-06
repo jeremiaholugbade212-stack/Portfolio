@@ -12,7 +12,7 @@ const Contact = () => {
 
         {/* Subtitle */}
         <p className="text-gray-300 max-w-xl mx-auto mb-12 text-lg">
-          Want to work with me? Reach out on any of my socials beloww. 📩
+          Want to work with me? Reach out on any of my socials below. 📩
         </p>
 
         {/* Icon Links */}
