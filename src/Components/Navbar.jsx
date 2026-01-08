@@ -30,7 +30,7 @@ const Navbar = () => {
         {/* Desktop Hire Me */}
         <a 
           href="#contact"
-          className="hidden md:inline bg-gradient-to-r from-green-400 to-blue-500 text-white transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full"
+          className="hidden md:inline bg-linear-to-r from-green-400 to-blue-500 text-white transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full"
         >
           Hire Me
         </a>
@@ -49,7 +49,7 @@ const Navbar = () => {
           {/* Mobile Hire Me */}
           <a 
             href="#contact"
-            className="bg-gradient-to-r from-green-400 to-blue-500 text-white px-5 py-2 rounded-full w-fit"
+            className="bg-linear-to-r from-green-400 to-blue-500 text-white px-5 py-2 rounded-full w-fit"
           >
             Hire Me
           </a>

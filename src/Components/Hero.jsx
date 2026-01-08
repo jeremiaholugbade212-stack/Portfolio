@@ -13,7 +13,7 @@ const Hero = () => {
 
       <h1 className="text-4xl font-bold leading-tight">
         I'm{" "}
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
+        <span className="text-transparent bg-clip-text bg-linear-to-r from-green-400 to-blue-500">
           Jeremiah Olugbade
         </span>
         , A Frontend Developer
@@ -32,7 +32,7 @@ const Hero = () => {
           href="/JEREMIAH-OLUGBADE.pdf"   // ✅ Replace this with your CV PDF file
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-gradient-to-r from-green-400 to-blue-500 text-white transform transition-transform duration-300 hover:scale-105 px-6 py-2 rounded-full"
+          className="bg-linear-to-r from-green-400 to-blue-500 text-white transform transition-transform duration-300 hover:scale-105 px-6 py-2 rounded-full"
         >
           Download CV
         </a>
