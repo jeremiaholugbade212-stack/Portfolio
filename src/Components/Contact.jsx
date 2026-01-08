@@ -3,6 +3,20 @@ import { FaInstagram, FaXTwitter, FaEnvelope } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 
+// read EmailJS config from Vite env vars
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "";
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || "";
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "";
+
+// Initialize EmailJS once (safe if PUBLIC_KEY is empty it will be a no-op)
+if (EMAILJS_PUBLIC_KEY) {
+  try {
+    emailjs.init(EMAILJS_PUBLIC_KEY);
+  } catch (e) {
+    // initialization failure is non-fatal here; we'll catch on send
+  }
+}
+
 const Contact = () => {
   const formRef = useRef();
   const [loading, setLoading] = useState(false);
@@ -13,25 +27,40 @@ const Contact = () => {
     setLoading(true);
     setMessage("");
 
-    try {
-      // Initialize EmailJS (do this once)
-      emailjs.init("YOUR_PUBLIC_KEY_HERE"); // Replace with your EmailJS public key
+    if (!EMAILJS_PUBLIC_KEY || !EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID) {
+      setMessage("Email service not configured. Please set up EmailJS keys.");
+      setLoading(false);
+      return;
+    }
 
-      // Send email using EmailJS
-      const result = await emailjs.sendForm(
-        "YOUR_SERVICE_ID_HERE", // Replace with your EmailJS service ID
-        "YOUR_TEMPLATE_ID_HERE", // Replace with your EmailJS template ID
-        formRef.current
+    try {
+      // collect form values explicitly so template variable names are clear
+      const fd = new FormData(formRef.current);
+      const templateParams = {
+        user_name: fd.get("user_name") || "",
+        user_email: fd.get("user_email") || "",
+        subject: fd.get("subject") || "",
+        message: fd.get("message") || "",
+      };
+
+      // send using explicit params (easier to debug than sendForm)
+      const result = await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        templateParams,
+        EMAILJS_PUBLIC_KEY
       );
 
-      if (result.status === 200) {
+      if (result && result.status === 200) {
         setMessage("Message sent successfully! 🎉");
         formRef.current.reset();
         setTimeout(() => setMessage(""), 3000);
+      } else {
+        throw new Error("EmailJS returned unexpected response");
       }
     } catch (error) {
       console.error("Error sending email:", error);
-      setMessage("Failed to send message. Please try again.");
+      setMessage("Failed to send message. Check console for details.");
       setTimeout(() => setMessage(""), 3000);
     } finally {
       setLoading(false);
