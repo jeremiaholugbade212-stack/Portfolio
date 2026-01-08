@@ -58,7 +58,7 @@ const Contact = () => {
 
               <input type="email" name="user_email" placeholder="your@email.com" required className="w-full bg-gray-800 px-4 py-2 rounded border border-gray-700 focus:border-green-500 outline-none" />
 
-              <input type="text" name="subject" placeholder="Subject" required className="w-full bg-gray-800 px-4 py-2 rounded border border-gray-700 focus:border-green-500 outline-none" />
+             
 
               <textarea name="message" rows="5" placeholder="Your message..." required className="w-full bg-gray-800 px-4 py-2 rounded border border-gray-700 focus:border-green-500 outline-none resize-none" />
 
