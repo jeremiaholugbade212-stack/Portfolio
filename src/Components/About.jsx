@@ -8,7 +8,7 @@ const About = () => {
 
         {/* Heading */}
         <h2 className='text-4xl font-bold text-center mb-12'>
-          About Me
+          About Mee
         </h2>
 
         {/* Content */}
