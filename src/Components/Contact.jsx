@@ -28,12 +28,13 @@ const Contact = () => {
       } else {
         console.error("EmailJS unexpected response:", result);
         setIsSuccess(false);
-        setMessage("Failed to send message. Try again later.");
+        const errMsg = typeof result?.error === "string" ? result.error : (result?.error?.message || "Failed to send message. Try again later.");
+        setMessage(errMsg);
       }
     } catch (error) {
       console.error("EmailJS error:", error);
       setIsSuccess(false);
-      setMessage("Failed to send message. Try again later.");
+      setMessage(error?.message || String(error) || "Failed to send message. Try again later.");
     } finally {
       setLoading(false);
     }
