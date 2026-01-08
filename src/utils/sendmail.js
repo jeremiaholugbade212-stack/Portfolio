@@ -25,7 +25,8 @@ export async function sendMailWithForm(formElement) {
     const res = await emailjs.sendForm(
       EMAILJS_SERVICE_ID,
       EMAILJS_TEMPLATE_ID,
-      formElement
+      formElement,
+      EMAILJS_PUBLIC_KEY
     );
 
     return { success: res?.status === 200, res };
@@ -45,7 +46,8 @@ export async function sendMailWithParams(templateParams = {}) {
     const res = await emailjs.send(
       EMAILJS_SERVICE_ID,
       EMAILJS_TEMPLATE_ID,
-      templateParams
+      templateParams,
+      EMAILJS_PUBLIC_KEY
     );
     return { success: res?.status === 200, res };
   } catch (err) {
