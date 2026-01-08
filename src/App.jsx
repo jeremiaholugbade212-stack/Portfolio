@@ -1,12 +1,11 @@
 import React, { useEffect } from "react";
-import Navbar from "../src/Components/Navbar";
-import Hero from "../src/Components/Hero";
-import About from "../src/Components/About";
-import Contact from "../src/Components/Contact";
-import Footer from "../src/Components/Footer";
-import { repeatFade } from "../src/utils/repeatFade";
+import Navbar from "./Components/Navbar";
+import Hero from "./Components/Hero";
+import About from "./Components/About";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
+import { repeatFade } from "./utils/repeatFade";
 import Projects from "./Components/Projects";
-
 import Skills from "./Components/Skills";
 
 const App = () => {
