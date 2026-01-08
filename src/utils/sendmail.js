@@ -19,7 +19,7 @@ export async function sendMailWithForm(formElement) {
   initEmailJs();
 
   if (!EMAILJS_PUBLIC_KEY || !EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID) {
-    return { success: false, error: "EmailJS not configured" };
+    return { success: false, error: "" };
   }
 
   if (!formElement) {
@@ -52,7 +52,7 @@ export async function sendMailWithParams(templateParams = {}) {
   initEmailJs();
 
   if (!EMAILJS_PUBLIC_KEY || !EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID) {
-    return { success: false, error: "EmailJS not configured" };
+    return { success: false, error: "" };
   }
 
   try {
