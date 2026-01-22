@@ -57,8 +57,8 @@ const Contact = () => {
 
               <input
                 type="email"
-                name="reply_to"
-                placeholder="your@email.com"
+                name="from_email"
+                placeholder="your email.com"
                 required
                 className="w-full bg-gray-800 px-4 py-2 rounded border border-gray-700 focus:border-green-500 outline-none"
               />
